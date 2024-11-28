@@ -49,27 +49,7 @@ public class CT24_11_28 {
 //	"skin"	"Dermatology"
 //	환자의 코드를 나타내는 문자열 code를 입력받아 위 표에 맞는 병과를 출력하도록 빈칸을 채워 코드를 완성해 주세요. 위 표의 단어로 끝나지 않는다면 "direct recommendation"를 출력합니다.
 	public void lv0_4() {
-		Scanner sc = new Scanner(System.in);
-        String code = sc.next();
-        String lastFourWords = code.substring(code.length()-4, code.length());
-
-        if(lastFourWords.equals("_eye")){		/*"_eye" 추가*/
-            System.out.println("Ophthalmologyc");
-        }
-        else if(lastFourWords.equals("head")){ 	/*lastFourWords.equals("head") 추가*/
-            System.out.println("Neurosurgery");
-        }
-        else if(lastFourWords.equals("infl")){ 	/*lastFourWords.equals("infl") 추가*/
-            System.out.println("Orthopedics");
-        }
-        else if(lastFourWords.equals("skin"))	
-        {
-            System.out.println("Dermatology");	/*else if(lastFourWords.equals("skin")) 추가*/
-        }
-        
-        else{									/*else 추가*/
-            System.out.println("direct recommendation");
-        }
+		
 		
 	}
 		 
